@@ -3,23 +3,18 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-sm">
-                            <ul>
-                                <li><h4>Proin accumsan</h4></li>
-                                <li><a href="#">Rutrum nulla a ultrices</a></li>
-                                <li><a href="#">Blandit elementum</a></li>
-                                <li><a href="#">Proin placerat accumsan</a></li>
-                                <li><a href="#">Morbi hendrerit libero </a></li>
-                                <li><a href="#">Curabitur sit amet tellus</a></li>
+                        <h4>Nega</h4>
+                          <p> Sobne biljke zahtevaju pravi odnos vlage, osveljenja, mešavine zemljišta, temperature i vode, dok su im je veoma bitni dodatni hranjivi sastojci i prava veličina posuda u kojima se nalaze.</p>
                             </ul>
                         </div>
                         <div class="col-sm">
                             <ul>
-                                <li><h4>Condimentum</h4></li>
-                                <li><a href="#">Curabitur sit amet tellus</a></li>
-                                <li><a href="#">Morbi hendrerit libero </a></li>
-                                <li><a href="#">Proin placerat accumsan</a></li>
-                                <li><a href="#">Rutrum nulla a ultrices</a></li>
-                                <li><a href="#">Cras dictum</a></li>
+                                <li><h4>zanimljivi linkovi</h4></li>
+                                <li><a href="http://www.svetbiljaka.com/prodaja/kat=12.html">svet biljaka</a></li>
+                                <li><a href="http://uspesnazena.com/korisni-saveti-zene/sobne-biljke-za-prociscavanje-vazduha-7-biljaka-za-vase-zdravlje/">biljke za vase zdravlje </a></li>
+                                <li><a href="https://opusteno.rs/zanimljivosti-f19/zanimljivosti-o-biljkama-t22103.html">zanimljivosti o biljkama</a></li>
+                                <li><a href="https://stil.kurir.rs/lepi-zdravi/medicina/84063/20-lekovitih-biljaka-i-njihova-primena-ovo-su-najbolji-lekovi-iz-narodne-medicine">20 lekovitih biljaka i njihova primena</a></li>
+                                
                             </ul>
                         </div>   
                         <div class="col-sm">
@@ -32,24 +27,19 @@
                                 <li><a href="#">Donec in ligula nisl.</a></li>
                             </ul>
                         </div>
-                        <div class="col-sm">
+                       <!-- < <div class="col-sm">
                             <h4>Suspendisse</h4>
                             <p>Integer mattis blandit turpis, quis rutrum est. Maecenas quis arcu vel felis lobortis iaculis fringilla at ligula. Nunc dignissim porttitor dolor eget porta.</p>
 
-                            <p class="social-icons">
-                                <a href="#"><i class="fa fa-facebook fa-2x"></i></a>
-                                <a href="#"><i class="fa fa-twitter fa-2x"></i></a>
-                                <a href="#"><i class="fa fa-youtube fa-2x"></i></a>
-                                <a href="#"><i class="fa fa-instagram fa-2x"></i></a>
-                            </p>
-                        </div>
+                           
+                        </div>  -->
                     </div>
                 </div>
             </div>
             
             
             <div class="footer-bottom">
-                    <p class="text-center">Free Bootstrap Template by <a href="https://zypopwebtemplates.com/">ZyPop</a>.</p>
+  
                     <p class="text-center"><a href="#">Back to top</a></p>
             </div>
             

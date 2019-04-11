@@ -1,0 +1,74 @@
+.slic {
+  width: 100px;
+  display: block;
+  margin: 0 auto;
+}
+.prob {
+  border: 1px solid black;
+  width: 250px;
+}
+.dug {
+  margin-left: 35px;
+}
+#dugmisa {
+  display: block;
+  margin: 0 auto;
+}
+#jen {
+  width: 300px;
+  display: block;
+  margin: 0 auto;
+  background: #88bc51;
+}
+#tabela {
+  /* margin-left: 150px; */
+}
+.tex {
+  text-align: center;
+}
+
+.jdg {
+  margin-left: 25%;
+  margin-top: 30%;
+}
+
+.koka {
+  margin-right: 40px;
+  margin-bottom: 150px;
+}
+#wrapis {
+  display: flex;
+  justify-content: center;
+  background: #88bc51;
+  margin-top: 20%;
+}
+#wrap2 {
+  display: flex;
+  justify-content: center;
+  background: #88bc51;
+  margin-top: 20%;
+}
+
+#okw1 {
+  display: flex;
+  justify-content: center;
+  background: rgba(136, 188, 81, 0.4);
+
+  /* width: 404px;
+  height: 240px; */
+}
+.one {
+  display: flex;
+  justify-content: center;
+  /* 
+  background: yellow; */
+}
+#slic {
+  height: 450px;
+  margin: 50px;
+}
+#pTag {
+  margin-top: 150px;
+  /* color: black; */
+  font-weight: bold;
+}

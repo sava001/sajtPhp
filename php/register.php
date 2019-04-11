@@ -1,16 +1,21 @@
 <?php
 
 // session_start();
+
 include("functions.php");
 
 if(isset($_POST['btnUnesi'])){
 
-    $ime = $_POST['tbIme'];
-    $prezime = $_POST['tbPrezime'];
+    $userName = $_POST['tbIme'];
+   
     $pass = $_POST['tbPass'];
+    $ulogaId =2;
 
-    register($ime,$prezime,$password);
-    header("location: ../index.php");
+
+    register($userName,$pass,$ulogaId);
+    // header("location: ../index.php");
+
+
 
 }
 
