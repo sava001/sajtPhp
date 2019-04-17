@@ -7,6 +7,19 @@ $(document).ready(function() {
 function provera(e) {
   e.preventDefault();
   console.log("radi haha");
-  let idProizvoda = $(this).data("id");
-  console.log(idProizvoda);
+  let id = $(this).data("id");
+
+  $.ajax({
+    url: "php/del.php",
+    method: "POST",
+    data: {
+      id: id
+    },
+    success: function(kategorije) {
+      console.log(kategorije);
+    },
+    error: function(xhr, greska, status) {
+      alert(greska);
+    }
+  });
 }

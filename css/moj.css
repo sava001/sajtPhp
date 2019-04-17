@@ -72,3 +72,21 @@
   /* color: black; */
   font-weight: bold;
 }
+.tabela {
+  margin-left: 25%;
+  margin-top: 10%;
+}
+.bord {
+  border: 1px solid black;
+}
+.tabela1 {
+  margin-left: 10%;
+}
+#dugmisa {
+  color: black;
+  text-align: center;
+}
+.dug {
+  float: left;
+  margin-right: 15%;
+}

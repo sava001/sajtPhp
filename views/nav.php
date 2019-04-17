@@ -33,13 +33,23 @@ $nav = $konekcija->query($upitNav);
                             <a class='nav-link' href='".$red->Putanja."'>".$red->Naziv. "</a> 
                             </li>";
                             }
-                            if( isset($_SESSION['korisnik'])){ ?>
+                            if( isset($_SESSION['korisnik']) && $_SESSION['korisnik']->ulogaId == 1) { ?>
                              <li class='nav-item'>   <a class='nav-link' href='logout.php'>logout</a>  </li>
-                     <?php       }
-                            else{ ?>
-                             <li class='nav-item'>   <a class='nav-link' href='login.php'>login</a>  </li>
-                             <li class='nav-item'>   <a class='nav-link' href='register.php'>register</a>  </li>
+                             <li class='nav-item'>   <a class='nav-link' href='admin.php'>admin</a>  </li>
+
+                  
+                      <?php          
+                         }
+                            else if(isset($_SESSION['korisnik']) && $_SESSION['korisnik']->ulogaId == 2){ ?>
+                                                 <li class='nav-item'>   <a class='nav-link' href='logout.php'>logout</a>  </li>
+                                                 <li class='nav-item'>   <a class='nav-link' href='nesto.php'>nesto</a>  </li>
+
+
                        <?php     }
+                       else{?>
+                        <li class='nav-item'>   <a class='nav-link' href='login.php'>login</a>  </li>
+                        <li class='nav-item'>   <a class='nav-link' href='register.php'>register</a>  </li>
+                    <?php   }
                         ?>
                         <!-- <li class="nav-item">
                                 <a class="nav-link" href="index.php">Home </a>

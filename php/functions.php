@@ -18,7 +18,6 @@ function register($userName,$password,$ulogaId)
             var_dump($password);
             $stmt = $konekcija->prepare('INSERT INTO korisnici (userName, password,ulogaId) VALUES (?,?,?)');
             $stmt->execute([$userName,md5($password),$ulogaId]);
-            $stmt->fetch();
         }
         else{
             echo("user name je zauzet");
@@ -120,4 +119,41 @@ function executeQuery($upit)
 {
     global $konekcija;
     return $konekcija->query($upit)->fetchAll();
+}
+function deleteCategor($id)
+{
+    global $konekcija;
+    $rezultat = $konekcija->prepare("DELETE FROM picture WHERE id = :id");
+    $rezultat->bindParam(":id", $id);
+    $rezultat->execute();
+}
+
+function updateCategori($id,$slika,$nesto,$bla)
+{
+    var_dump($id);
+    global $konekcija;
+    $priprema = $konekcija->prepare("UPDATE picture
+    SET ime = ?,img_dir = ?,textSlika = ?
+     WHERE id = ?");
+       $priprema->execute([$nesto,$slika,$bla,$id]);
+    
+}
+
+function getCategoryById($id)
+{
+
+    global $konekcija;
+    $priprema = $konekcija->prepare("SELECT * FROM picture
+    WHERE id=?");
+    $priprema->execute([$id]);
+   return $priprema->fetch();
+    
+
+}
+function insertCategory($nesto,$slikaName,$bla)
+{
+    global $konekcija;
+    $stmt = $konekcija->prepare('INSERT INTO picture (ime, img_dir,textSlika) VALUES (?,?,?)');
+    $stmt->execute([$nesto,$slikaName,$bla]);
+
 }

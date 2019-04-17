@@ -7,13 +7,13 @@ $sveSlike = $konekcija->query($upitSlike);
 $prvaSlika = $sveSlike ->fetchAll(PDO::FETCH_OBJ);
 
 foreach($prvaSlika as $inf){
-  var_dump($inf->name);
+  // var_dump($inf->name);
 }
 
 
 
  ?>
- <div class="jumbotron-wrap jumbotron-wrap-image mb-0">
+ <div class="jumbotron-wrap clicka">
             <div class="container">
                 <div id="mainCarousel" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">

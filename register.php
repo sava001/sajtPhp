@@ -18,7 +18,7 @@
     </head>
 <div id="wrapis">
     <div id='cil'>
-<form action="php/register.php" method="POST">
+<form action="php/register.php"  onSubmit="return provera();" method="POST">
 <h3>Registracija</h3>
 <input type="hidden" name="hiddenStudentID" id="hiddenStudentID" value=""/> 
 <div class="form-group">
@@ -29,7 +29,8 @@
 
 </div> <br/>
 <div class="form-group">
-<input type="submit" onclick="submitForm()" id="btnUnesi" name="btnUnesi" class="btn btn- primary pull-left" value="posalji"/>
+
+<input type="submit"  id="btnUnesi" name="btnUnesi" class="btn btn- primary pull-left" value="posalji"/>
 
  
 </div> </form>
