@@ -19,23 +19,23 @@ foreach($prvaSlika as $inf){
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <div class="jumbotron">
-                                <h1 class="text-center">Tristique sem vitae metus ornare </h1>
-                                <p class="lead text-center">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
-                                <p class="lead text-center">
+                                <h1 class="text-center">Ovde možete naci informacije o sobnim biljkama </h1>
+                                <p class="lead text-center">vrste biljaka najbolje za kuću</p>
+                                <!-- <p class="lead text-center">
                                     <a class="btn btn-primary btn-lg" href="#" role="button"><i class="fa fa-info"></i> &nbsp; Learn more</a>
                                     <a class="btn btn-secondary btn-lg" href="#" role="button"><i class="fa fa-gbp"></i> &nbsp; Buy now</a>
-                                </p>
+                                </p> -->
                             </div>
                         </div>
 
                         <div class="carousel-item">
                             <div class="jumbotron">
-                                <h1 class="text-center">Cras sit amet nibh libero, in gravida nulla</h1>
-                                <p class="lead text-center">Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.</p>
-                                <p class="lead text-center">
+                                <h1 class="text-center">Saveti za o čuvanju i održavanju biljaka</h1>
+                                <p class="lead text-center">korisni linkovi i saveti</p>
+                                <!-- <p class="lead text-center">
                                     <a class="btn btn-secondary btn-lg" href="#" role="button"><i class="fa fa-gbp"></i> &nbsp; Buy now</a>
                                     <a class="btn btn-primary btn-lg" href="#" role="button"><i class="fa fa-info"></i> &nbsp; Learn more</a>
-                                </p>
+                                </p> -->
                             </div>
                         </div>
                     </div>
@@ -71,8 +71,8 @@ foreach($prvaSlika as $inf){
                           <img class="card-img-top" src="images/<?php echo $inf->img_dir?>" alt="Card image cap">
                           <div class="card-body">
                             <p class="card-text"><?php echo $inf->textSlika ?> </p>
-                            <a href="#" class="btn btn-primary">Left link</a>
-                              <a href="#" class="btn btn-secondary">Right link</a>
+                          <a href="#"data-id='<?php echo $inf->id ?> ' class="jes">Left link</a>
+                              <!--   <a href="#" class="btn btn-secondary">Right link</a> -->
                           </div>
                         </div>
                        
@@ -136,6 +136,7 @@ foreach($prvaSlika as $inf){
                     </div> -->
                 </div>
             </div>
+            <script src="js/main.js"></script>
         </div>
         
         

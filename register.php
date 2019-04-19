@@ -32,7 +32,10 @@
 
 <input type="submit"  id="btnUnesi" name="btnUnesi" class="btn btn- primary pull-left" value="posalji"/>
 
- 
+ <?php if(isset($_SESSION['greska'])) 
+ {
+     echo "<h2> pogresan unos username ili passworda";
+ }  ?> 
 </div> </form>
 
 </div>

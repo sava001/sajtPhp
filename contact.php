@@ -42,12 +42,14 @@ require_once "views/nav.php";
                             type="button"
                             class="btn"
                             value="send"
+                            onclick="provera();"
        
                           />
                           <input
                           type="button"
                           class="btn zajs"
                           value="reset"
+                          onclick="ponisti();"
                          
                         />
                         </form>
@@ -153,6 +155,7 @@ require_once "views/nav.php";
         
             
         </section>
+        <script src="js/vaildConta.js"></script>
     </div>
 
 

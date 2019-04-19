@@ -25,8 +25,8 @@ function provera() {
   nizOk = [];
   let userName = document.getElementById("tbIme").value;
   let password = document.getElementById("pass").value;
-  let valUserName = /^[A-ZČĆŽŠĐ][a-zčćžšđ]{2,9}(\s[A-ZČĆŽŠĐ][a-zčćžšđ]{2,9})+$/;
-  let valPassword = /^[A-ZČĆŽŠĐ][a-zčćžšđ]{2,9}(\s[A-ZČĆŽŠĐ][a-zčćžšđ]{2,9})+$/;
+  let valUserName = /^[\w#@!]{4,20}$/;
+  let valPassword = /^[\w#@!]{4,20}$/;
   if (valUserName.test(userName) && valPassword.test(password)) {
     console.log("ok je");
     nizOk.push("ok je sve");
@@ -40,7 +40,7 @@ function provera() {
 function prover() {
   let userName = document.getElementById("tbIme").value;
 
-  let valUserName = /^[A-ZČĆŽŠĐ][a-zčćžšđ]{2,9}(\s[A-ZČĆŽŠĐ][a-zčćžšđ]{2,9})+$/;
+  let valUserName = /^[\w#@!]{4,20}$/;
 
   if (valUserName.test(userName)) {
     document.getElementById("tbIme").style.color = "black";
@@ -51,7 +51,7 @@ function prover() {
 function prover1() {
   let password = document.getElementById("pass").value;
 
-  let valPassword = /^[A-ZČĆŽŠĐ][a-zčćžšđ]{2,9}(\s[A-ZČĆŽŠĐ][a-zčćžšđ]{2,9})+$/;
+  let valPassword = /^[\w#@!]{4,20}$/;
   if (valPassword.test(password)) {
     document.getElementById("pass").style.color = "black";
   } else {

@@ -157,3 +157,12 @@ function insertCategory($nesto,$slikaName,$bla)
     $stmt->execute([$nesto,$slikaName,$bla]);
 
 }
+
+function prikaziDetalje($id)
+{
+    global $konekcija;
+    $priprema = $konekcija->prepare("SELECT * FROM picture
+    WHERE id=?");
+     $priprema->execute([$id]);
+     return $priprema->fetch();
+}

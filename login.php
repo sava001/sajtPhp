@@ -35,4 +35,5 @@
  
 </div> </form>
 </div>
+<script src="js/validacija.js"></script>
 </div>

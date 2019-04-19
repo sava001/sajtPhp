@@ -1,3 +1,12 @@
+<?php
+// session_start();
+
+include("php/konekcija.php");
+$upitNav ="SELECT * from navMeni";
+$nav = $konekcija->query($upitNav);
+?>
+
+
 <footer class="footer">
             <div class="footer-lists">
                 <div class="container">
@@ -19,12 +28,40 @@
                         </div>   
                         <div class="col-sm">
                             <ul>
-                                <li><h4>Suspendisse</h4></li>
+                            <li><h4>Nav Meni</h4></li>
+                            <?php
+                            foreach($nav as $red){
+
+                                echo " <li><a href='".$red->Putanja ."'>" .$red->Naziv. "</a></li>";
+                            }
+                            if( isset($_SESSION['korisnik']) && $_SESSION['korisnik']->ulogaId == 1) {
+                                
+                               ?>
+                             <li><a href="admin.php"> admin </a></li>
+                             
+                             <li><a href="logout.php"> logout </a></li>
+                             <?php
+                            }
+                             
+                                 else if(isset($_SESSION['korisnik']) && $_SESSION['korisnik']->ulogaId == 2){ ?>
+                                 <li><a href="info.php"> info </a></li>    
+
+                                <li><a href="logout.php"> logout </a></li>
+                                 <?php }
+
+                                 
+                                 else{ ?>
+
+                                    <li><a href="login.php"> login </a></li>
+                                    <li><a href="register.php"> register </a></li>
+
+                                 <?php  } ?>
+                                <!-- <li><h4>Suspendisse</h4></li>
                                 <li><a href="#">Morbi hendrerit libero </a></li>
                                 <li><a href="#">Proin placerat accumsan</a></li>
                                 <li><a href="#">Rutrum nulla a ultrices</a></li>
                                 <li><a href="#">Curabitur sit amet tellus</a></li>
-                                <li><a href="#">Donec in ligula nisl.</a></li>
+                                <li><a href="#">Donec in ligula nisl.</a></li> -->
                             </ul>
                         </div>
                        <!-- < <div class="col-sm">

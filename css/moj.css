@@ -28,8 +28,8 @@
 }
 
 .jdg {
-  margin-left: 25%;
-  margin-top: 30%;
+  margin-left: 35%;
+  margin-top: 20%;
 }
 
 .koka {
@@ -89,4 +89,7 @@
 .dug {
   float: left;
   margin-right: 15%;
+}
+.clicka {
+  background-image: url("../images/popa.jpg");
 }

@@ -17,7 +17,7 @@ $nav = $konekcija->query($upitNav);
             <div class="container">
                 
                 <!-- Company name shown on mobile -->
-                <a class="navbar-brand" href="index.php"><span>Nase</span>Biljke</a>
+                <a class="navbar-brand" href="index.php"><span>Naše</span>Biljke</a>
 
                 <!-- Mobile menu toggle -->
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -42,7 +42,7 @@ $nav = $konekcija->query($upitNav);
                          }
                             else if(isset($_SESSION['korisnik']) && $_SESSION['korisnik']->ulogaId == 2){ ?>
                                                  <li class='nav-item'>   <a class='nav-link' href='logout.php'>logout</a>  </li>
-                                                 <li class='nav-item'>   <a class='nav-link' href='nesto.php'>nesto</a>  </li>
+                                                 <li class='nav-item'>   <a class='nav-link' href='info.php'>info</a>  </li>
 
 
                        <?php     }

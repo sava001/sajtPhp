@@ -17,3 +17,12 @@ require_once "views/nav.php";
 </td> <td class='bord'> <button name="saki" id="save">sacuvaj</button> </tr>
 </form>
 </table>
+
+
+
+
+
+<?php
+require_once "views/footer.php";
+
+?>
