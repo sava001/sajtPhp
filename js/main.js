@@ -33,6 +33,7 @@ function provera1(e) {
   $.ajax({
     url: "info.php",
     method: "POST",
+    dataType: "json",
     data: {
       id: id
     },

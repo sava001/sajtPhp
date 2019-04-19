@@ -19,21 +19,25 @@
 
 <div id='wrap2'>
     <div id='jok'>
-<form action="php/loginProv.php" method="POST">
+<form action="php/loginProv.php" onSubmit="return provera3();" method="POST">
 <h3>Logovanje</h3>
 
 <div class="form-group">
-<p>Ime </p> <input type="text" id="ime" name="imen" placeholder="Ime">
+<p>Ime: </p> <input type="text" id="ime" name="imen" placeholder="ime">
 
-<p>Password </p> <input type="text" id="pasword" name="paswor" placeholder="pasword">
+<p>Password: </p> <input type="text" id="pasword" name="paswor" placeholder="password">
 
 
 </div> <br/>
 <div class="form-group">
 <input type="submit" id="btnUnesi" name="stisni" class="btn btn- primary pull-left" value="posalji"/>
 
- 
+<?php if(isset($_SESSION['greska'])) 
+ {
+     echo "<h2> pogresan unos username ili passworda";
+ }  ?> 
 </div> </form>
+<a href='index.php'id='kec1'> vrati me na index  ->></a>
 </div>
-<script src="js/validacija.js"></script>
+<script src="js/validacija2.js"></script>
 </div>

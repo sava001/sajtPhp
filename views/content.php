@@ -1,6 +1,7 @@
  <!-- Jumbtron / Slider -->
 
  <?php
+ 
 include("php/konekcija.php");
 $upitSlike ="SELECT * from picture";
 $sveSlike = $konekcija->query($upitSlike);
@@ -19,8 +20,8 @@ foreach($prvaSlika as $inf){
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <div class="jumbotron">
-                                <h1 class="text-center">Ovde možete naci informacije o sobnim biljkama </h1>
-                                <p class="lead text-center">vrste biljaka najbolje za kuću</p>
+                                <h1 class="text-center" id='jan'>Ovde možete naci informacije o sobnim biljkama </h1>
+                                <p class="lead text-center" id='jan4'>vrste biljaka najbolje za kuću</p>
                                 <!-- <p class="lead text-center">
                                     <a class="btn btn-primary btn-lg" href="#" role="button"><i class="fa fa-info"></i> &nbsp; Learn more</a>
                                     <a class="btn btn-secondary btn-lg" href="#" role="button"><i class="fa fa-gbp"></i> &nbsp; Buy now</a>
@@ -30,8 +31,8 @@ foreach($prvaSlika as $inf){
 
                         <div class="carousel-item">
                             <div class="jumbotron">
-                                <h1 class="text-center">Saveti za o čuvanju i održavanju biljaka</h1>
-                                <p class="lead text-center">korisni linkovi i saveti</p>
+                                <h1 class="text-center" id='jan2'>Saveti za o čuvanju i održavanju biljaka</h1>
+                                <p class="lead text-centerjen" id='jan3'>korisni linkovi i saveti</p>
                                 <!-- <p class="lead text-center">
                                     <a class="btn btn-secondary btn-lg" href="#" role="button"><i class="fa fa-gbp"></i> &nbsp; Buy now</a>
                                     <a class="btn btn-primary btn-lg" href="#" role="button"><i class="fa fa-info"></i> &nbsp; Learn more</a>
@@ -137,6 +138,7 @@ foreach($prvaSlika as $inf){
                 </div>
             </div>
             <script src="js/main.js"></script>
+
         </div>
         
         

@@ -17,14 +17,16 @@
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     </head>
 <div id="wrapis">
+
+
     <div id='cil'>
 <form action="php/register.php"  onSubmit="return provera();" method="POST">
 <h3>Registracija</h3>
 <input type="hidden" name="hiddenStudentID" id="hiddenStudentID" value=""/> 
 <div class="form-group">
-<p>user name </p> <input type="text" id="tbIme" name="tbIme" placeholder="Ime">
+<p>User Name: </p> <input type="text" id="tbIme" name="tbIme" placeholder="ime">
 
-<p>Password </p> <input type="text" id="pass" name="tbPass" placeholder="pasword">
+<p>Password: </p> <input type="text" id="pass" name="tbPass" placeholder="password">
 
 
 </div> <br/>
@@ -37,7 +39,8 @@
      echo "<h2> pogresan unos username ili passworda";
  }  ?> 
 </div> </form>
-
+<a href='index.php'id='kec'> vrati me na index ->> </a>
 </div>
+
 <script src="js/validacija.js"></script>
 </div>

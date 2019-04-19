@@ -1,6 +1,6 @@
 
 <?php
-session_start();
+// session_start();
 
 include("php/konekcija.php");
 $upitNav ="SELECT * from navMeni";
@@ -36,6 +36,7 @@ $nav = $konekcija->query($upitNav);
                             if( isset($_SESSION['korisnik']) && $_SESSION['korisnik']->ulogaId == 1) { ?>
                              <li class='nav-item'>   <a class='nav-link' href='logout.php'>logout</a>  </li>
                              <li class='nav-item'>   <a class='nav-link' href='admin.php'>admin</a>  </li>
+                             <li class='nav-item'>   <a class='nav-link' href='info.php'>info</a>  </li>
 
                   
                       <?php          

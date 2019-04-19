@@ -73,14 +73,15 @@
   font-weight: bold;
 }
 .tabela {
-  margin-left: 25%;
-  margin-top: 10%;
+  /* margin-left: 25%; */
+
+  margin-top: 15%;
 }
 .bord {
   border: 1px solid black;
 }
 .tabela1 {
-  margin-left: 10%;
+  margin-top: 15%;
 }
 #dugmisa {
   color: black;
@@ -92,4 +93,57 @@
 }
 .clicka {
   background-image: url("../images/popa.jpg");
+}
+#jan {
+  color: #495057;
+}
+#jan2 {
+  color: #495057;
+}
+#jan3 {
+  color: black;
+}
+#jan4 {
+  color: black;
+}
+#btnUnesi {
+  margin-bottom: 15%;
+}
+#kec {
+  float: right;
+  margin-bottom: 15%;
+
+  text-decoration: none;
+  color: black;
+}
+
+#kec1 {
+  float: right;
+  margin-bottom: 15%;
+  text-decoration: none;
+  color: black;
+}
+#neki {
+  display: flex;
+  flex-wrap: wrap;
+}
+#tab {
+}
+.zvon {
+  text-align: center;
+  margin-top: 1%;
+}
+#neki1 {
+  display: flex;
+  flex-wrap: row;
+  justify-content: center;
+}
+#tab1 {
+  /* display: flex;
+  justify-content: center; */
+}
+#neki2 {
+  display: flex;
+  flex-wrap: row;
+  justify-content: center;
 }
